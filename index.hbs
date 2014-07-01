@@ -1,0 +1,97 @@
+{{!< default}}
+
+<header class="nav-head">
+    <div class="vertical">
+        {{> mainnav}}
+    </div>
+</header>
+
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            <h1 class="blog-title">Start Converting More Customers In One Month Without Increasing Your Advertising Spend… Just Like Johnny</h1>
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+    
+    <article class="{{post_class}}">
+        <section class="post-excerpt">
+            <h3>This is a story about two business men called Johnny Wright and Larry de Losser.</h3>
+
+            <p>Now, both Johnny and Larry sold eyewear for canines – nothing but the finest quality glasses for the most discerning of pooches.</p>
+
+            <p>They were both looking to build their businesses and become the top dog (pardon the pun) in their industry.</p>
+
+            <p>Larry decided to spend all of his budget on more advertising, to bring as many people as possible to his website peek-a-pooch.com.</p>
+
+            <p>Johnny, on the other hand, hired an experienced (and, dare I say, handsome) CRO consultant to optimize his website designer-doggy.com to increase his existing conversion rates.</p>
+
+            <p>While Larry was busy pouring money into advertising, Johnny’s consultant researched and analysed Johnny’s website along with his competitors.</p>
+
+            <p>He looked at Johnny’s website analytics, surveyed his customers and devised a plan of action to increase Johnny’s sales of doggy glasses.</p>
+
+            <p>Larry’s additional advertising was paying off and he’d increased the number of visitors to his website from 10,000 to 20,000 per month.</p>
+
+            <p>Larry’s average sale was worth $100 and with a conversion rate of 1%, he was making one sale out of every 100 visitors to his website. He’d increased his monthly revenue from what was initially $10,000 up to $20,000, but due to his additional monthly advertising costs of $5,000, he only profited $15,000 per month.</p>
+
+            <p>Johnny also started with 10,000 visitors per month and that remained unchanged. But after making the consultants recommended changes to his website, his conversion rate doubled from one sale for every 100 visitors to two sales for every 100 visitors.</p>
+
+            <p>Now Johnny was making $20,000 in revenue per month and profiting from all of it.</p>
+
+            <p>But he didn’t stop there…</p>
+
+            <p>Johnny then started advertising just like Larry had and doubled his visitors to 20,000 per month. Johnny was now making $40,000 minus his monthly advertising costs of $5,000.</p>
+
+            <p>Over the following year Johnny made $420,000 in profit over Larry’s $180,000 which is not to shabby don’t you think.</p>
+
+            <p>Now… who would you rather be?</p>
+
+            <p><a href="/contact">Don’t be a Larry... work with me »</a></p>
+        </section>
+    </article>
+
+    <article class="{{post_class}}">
+        <section class="post-excerpt">
+            <h2><img src="assets/images/david-crowther-color.png" alt="David Crowther" style="float:right;padding-left:30px">Hi, I’m David.</h2>
+
+            <p>I’m an independent Senior Consultant specialising in Conversion Rate Optimization (CRO) and User Experience (UX) Design.</p>
+
+            <p>Essentially, I convert more of your website visitors into customers.</p>
+
+            <p>I’m based from the UK and for the past 16 years I’ve been working with clients from the US, Canada, UK, Europe and Australia.</p>
+
+            <p>My expertise comes from years of having successfully helped companies to generate targeted traffic to their website, increase their visitor-to-customer conversions, and strengthen their long-term customer retention.</p>
+        </section>
+    </article>
+
+    <article class="{{post_class}}">
+        <section class="post-excerpt">
+            <h2>Money Back Guarantee</h2>
+            <p>What separates me from the rest is my confidence to provide a money back guarantee on my services. I prefer long client relationships and clients who are happy to refer me to their friends and colleagues.</p> 
+            <p>So I offer a 80% money back guarantee if you’re not satisfied, and where testing is possible I guarantee a relative increase of 20% in your conversion rate or your money back.</p>
+            <p>What that means to you is that I don’t stop working until we start seeing results.</p>
+        </section>
+    </article>
+
+    
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+</main>

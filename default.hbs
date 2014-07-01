@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Inspectlet Code }}
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 11443006]);
+        (function() {
+            function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+            if (window.attachEvent){
+                window.attachEvent('onload', __ldinsp);
+            }else{
+                window.addEventListener('load', __ldinsp, false);
+            }
+        })();
+    </script>
+
+    {{! SumoMe script }}
+    <script src="//load.sumome.com/" data-sumo-site-id="9699106193014cd1245e1af6029b9a3b03df81685139eaa896ad07e72932b21e" async></script>
+
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/nav.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/ouibounce.css"}}" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+    {{! Vero code }}
+    <script type="text/javascript">
+      var _veroq = _veroq || [];
+      _veroq.push(['init', { api_key: '8537815f12b8be19dc78dad0e471632e2c8ff572' } ]);
+      (function() {var ve = document.createElement('script'); ve.type = 'text/javascript'; ve.async = true; ve.src = '//d3qxef4rp70elm.cloudfront.net/m.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ve, s);})();
+    </script>
+
+    {{! Inspectlet code }}
+    <script type="text/javascript" id="inspectletjs">
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 2051583616]);
+        (function() {
+            function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+            if (window.attachEvent){
+                window.attachEvent('onload', __ldinsp);
+            }else{
+                window.addEventListener('load', __ldinsp, false);
+            }
+        })();
+    </script>
+
+    {{! KISSmetrics code }}
+    <script type="text/javascript">var _kmq = _kmq || [];
+    var _kmk = _kmk || 'e1cd909d49ce0d8ee6e77fab2f7d49a4c2ed550f';
+    function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+    }
+    _kms('//i.kissmetrics.com/i.js');
+    _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+    </script>
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">RSS</span></a>
+        <div class="inner">
+            
+            <section class="copyright">&copy; Copyright {{date format="YYYY"}} <a href="{{@blog.url}}/">{{@blog.title}}</a> &bull; All rights reserved. &bull; <a href="/privacy-policy/">Privacy Policy</a> &bull; <a href="/terms-of-service/">Terms of Service</a></section>
+            <section class="poweredby">Made with ♥ & curries.</section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript files }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/ouibounce.min.js"}}"></script>
+
+    {{! GetResponse code }}
+    <script type="text/javascript">
+    var gr_goal_params = {
+     param_0 : '',
+     param_1 : '',
+     param_2 : '',
+     param_3 : '',
+     param_4 : '',
+     param_5 : ''
+    };</script>
+    <script type="text/javascript" src="https://app.getresponse.com/goals_log.js?p=45901&u=MnBi"></script>
+
+    {{! StatHat code }}
+    <img src="http://api.stathat.com/c?ukey=Njg1MyCwJo2eIOTXmuokOeNQ4X3h&key=oCKTA7WNhuuVq2YZYrXZoCBNU0hSWg~~&count=1" style="display:none;" width="1" height="1"/>
+</body>
+</html>
