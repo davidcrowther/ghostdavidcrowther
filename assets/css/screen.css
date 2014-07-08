@@ -465,7 +465,7 @@ nav{
 }
 
 nav a{
-    color:#fff;
+/*    color:#fff;
     font-size:15px;
     text-transform:uppercase;
     padding:8px 12px;
@@ -476,7 +476,7 @@ nav a{
     margin-left:15px;
     border:2px solid transparent;
     text-shadow:0 1px 5px rgba(0,0,0,.2);
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;*/
 }
 
 nav a:hover{
