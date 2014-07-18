@@ -70,7 +70,7 @@
     border: 1px solid #4c4c4c;
     background-color: #fff;
     padding: 30px 26px;
-    width:500px;
+    width:600px;
     position:relative;
     text-align:left;
     cursor:pointer;
@@ -79,20 +79,18 @@
 .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li h4.title{ 
     font-weight:bold;
     /*font-style:normal;      */
-    /*font-family:"Open Sans"; */
+    font-family:"Open Sans";
     color: inherit; 
     margin:0px 0px 20px 0px ;
     /*padding:0;*/
-    font-size: .9em; 
+    font-size: 1.2em; 
     line-height: 120%;
-    font-family: Arial;
     cursor: default;;
 }
 .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li p{ 
     font-weight:normal;
     font-style:normal;      
-    /*font-family:"Open Sans"; */
-    font-family: Arial;
+    font-family:"Open Sans";
     color: inherit; 
     margin:0px 0px 20px 0px ;
     padding:0;
@@ -101,8 +99,8 @@
 }
 .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li strong{ 
     font-weight: bold;
-    color: #000;
-    font-family: Arial;
+    color: #4383ce;
+    font-family: "Open Sans";
     display: block;
     margin: 0px 0px 8px 0px;
     line-height: 100%;
@@ -113,8 +111,8 @@
     font-size: inherit;
 }
 .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two li a:hover{ 
-    text-decoration: underline;
-    color: inherit;
+    color: #333;
+    background-color: #ddd;
 }
 .flat-menu ul.flat-responsive-menu li ul.menu-dropdown-two:before{
     position:absolute;
